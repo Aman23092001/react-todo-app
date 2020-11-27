@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;0,900;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  height: 100vh;
+  width: 100%;
+  background: #57b7f2;
+}
+
+.todo-body {
+  width: 700px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-title {
+  width: 100%;
+  color: #f0f1f2;
+  font-weight: 900;
+  font-size: 3rem;
+  margin-top: 1.2rem;
+  padding: 6px 14px;
+  border: 6px solid #f2c36b;
+  border-radius: 14px;
+}
+
+.add-task {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0.8rem;
+}
+
+.add-task input {
+  width: 80%;
+  background: #6dccf2;
+  border: none;
+  outline: none;
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 6px;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #f0f1f2;
+}
+
+.add-task input::-webkit-input-placeholder {
+  font-size: 1rem;
+  color: #f0f1f2;
+  font-weight: 300;
+}
+
+.add-task input:-ms-input-placeholder {
+  font-size: 1rem;
+  color: #f0f1f2;
+  font-weight: 300;
+}
+
+.add-task input::-ms-input-placeholder {
+  font-size: 1rem;
+  color: #f0f1f2;
+  font-weight: 300;
+}
+
+.add-task input::placeholder {
+  font-size: 1rem;
+  color: #f0f1f2;
+  font-weight: 300;
+}
+
+.add-task button {
+  width: 20%;
+  border-radius: 10px;
+  background: #27a4f2;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-weight: 800;
+  font-size: 1rem;
+  color: #f0f1f2;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.tasklists {
+  width: 100%;
+  list-style: none;
+  margin-top: 1.6rem;
+}
+
+.tasklists_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f2c36b;
+  margin-bottom: 5px;
+  padding: 12px;
+  border-radius: 8px;
+  color: #f0f1f2;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.tasklists_list_task {
+  position: relative;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.tasklists_list_task::after {
+  position: absolute;
+  top: 0;
+  left: -15px;
+  content: '';
+  width: 15px;
+  height: 15px;
+  -webkit-transform: translate(-50%, 10%);
+          transform: translate(-50%, 10%);
+  border: 2px solid #f0f1f2;
+  border-radius: 6px;
+}
+
+.tasklists_list i.fas {
+  cursor: pointer;
+}
+
+.completed {
+  -webkit-text-decoration: line-through #6dccf2 2px;
+          text-decoration: line-through #6dccf2 2px;
+}
+
+.completed::after {
+  background: #6dccf2;
+}
+/*# sourceMappingURL=style.css.map */
